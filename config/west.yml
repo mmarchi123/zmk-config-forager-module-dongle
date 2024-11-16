@@ -17,5 +17,6 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
+      import: west.yml
   self:
     path: config
