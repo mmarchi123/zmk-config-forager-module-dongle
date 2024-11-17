@@ -21,11 +21,9 @@ include:
   - board: seeeduino_xiao_ble
     shield: forager_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
-    # cmake-args: -DZMK_EXTRA_MODULES=/tmp/zmk-config/prospector-zmk-module
-  # - board: seeeduino_xiao_ble
-  #   shield: forager_left rgbled_adapter
-  #   snippet: studio-rpc-usb-uart
-  # - board: seeeduino_xiao_ble
-  #   shield: forager_right rgbled_adapter
-  # - board: seeeduino_xiao_ble
-  #   shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: forager_left rgbled_adapter
+  - board: seeeduino_xiao_ble
+    shield: forager_right rgbled_adapter
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
