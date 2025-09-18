@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: forager}
 layers:
-  Base:
+  ColemakDH:
   - Q
   - W
   - F
@@ -10,16 +10,16 @@ layers:
   - L
   - U
   - Y
-  - {t: ;, h: Sft+;}
+  - ;
   - A
-  - {t: R, h: Ctrl}
-  - {t: S, h: Alt}
-  - {t: T, h: Gui}
+  - R
+  - S
+  - {t: T, h: Navigation}
   - G
   - M
-  - {t: N, h: Gui}
-  - {t: E, h: Alt}
-  - {t: I, h: Ctrl}
+  - N
+  - E
+  - I
   - O
   - Z
   - X
@@ -28,223 +28,45 @@ layers:
   - V
   - K
   - H
-  - {t: ',', h: 'Sft+,'}
-  - {t: ., h: Sft+.}
-  - {t: /, h: Sft+/}
-  - {t: ⌫, h: Sym, s: Alt+⌫}
-  - {t: Shift, h: sticky, s: Caps Word}
-  - {t: Shift, h: sticky, s: Caps Word}
-  - {t: ␣, h: Nav}
-  Nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - Ctl+Page ↑
-  - ↑
-  - Ctl+Page ↓
-  - DELETE
-  - {t: ▽, type: trans}
+  - ','
+  - .
+  - /
   - Ctrl
-  - Alt
-  - Gui
+  - ␣
+  - Shift
+  - ⌫
+  Navigation:
   - {t: ▽, type: trans}
-  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ←
   - ↓
+  - UP ARROW
   - →
-  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Home
-  - End
-  - Ctl+␣
-  - Ctl+␣
-  - Sym
-  - Shift
   - {t: ▽, type: trans}
-  - {type: held}
-  Sym:
-  - {t: '1', h: Sft+1}
-  - {t: '2', h: Sft+2}
-  - {t: '3', h: Sft+3}
-  - {t: '4', h: Sft+4}
-  - {t: '5', h: Sft+5}
-  - {t: '6', h: Sft+6}
-  - {t: '7', h: Sft+7}
-  - {t: '8', h: Sft+8}
-  - {t: '9', h: Sft+9}
-  - {t: '0', h: Sft+0}
-  - {t: '`', h: Sft+`}
-  - {t: Ctrl, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Gui, h: sticky}
-  - {t: Ctl+Alt, h: sticky}
-  - {t: \, h: Sft+\}
-  - {t: '-', h: Sft+-}
-  - {t: '=', h: Sft+=}
-  - {t: '[', h: 'Sft+['}
-  - {t: ']', h: 'Sft+]'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ENTER
-  - {type: held}
-  - {t: ▽, type: trans}
-  - Shift
-  - Nav
-  Adj:
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT CLR ALL
-  - SLEEP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BRI DN
-  - BRI UP
-  - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Vol Down
-  - Vol Up
-  - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Boot
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  Func:
-  - F1
-  - F2
-  - F3
-  - F4
-  - AC BACK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Rect:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Gaming:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-combos:
-- p: [0, 9, 20, 29]
-  k: Boot
+  - BACKSPACE
+  - DELETE
