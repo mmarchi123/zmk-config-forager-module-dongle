@@ -33,8 +33,8 @@ layers:
   - /
   - LEFT ALT
   - {t: ␣, h: System}
-  - {t: LEFT SHIFT, h: sticky, s: Caps Word}
   - {t: BACKSPACE, h: Function}
+  - {t: LEFT SHIFT, h: sticky, s: Caps Word}
   Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -103,8 +103,8 @@ layers:
   - F10
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   Numeric:
   - ''
   - '7'

@@ -90,10 +90,10 @@
 
         base {
             bindings = <
-  &kp Q  &w_shiftTab               &kp F                 &p_shiftTab           &kp B          &kp J        &kp L                 &kp U                     &kp Y                          &kp SEMI
-  &kp A  &lt 4 R                   &lt 3 S               &lt 1 T               &kp G          &kp M        &kp N                 &lt 3 E                   &lt 4 I                        &kp O
-  &kp Z  &hold_tap LEFT_CONTROL X  &hold_tap LEFT_ALT C  &hold_tap LEFT_GUI D  &kp V          &kp K        &hold_tap LEFT_GUI H  &hold_tap LEFT_ALT COMMA  &hold_tap LEFT_CONTROL PERIOD  &kp FSLH
-                                                         &kp LEFT_ALT          &lt 5 SPACE    &smart_shft  &lt 2 BACKSPACE
+  &kp Q  &w_shiftTab               &kp F                 &p_shiftTab           &kp B          &kp J            &kp L                 &kp U                     &kp Y                          &kp SEMI
+  &kp A  &lt 4 R                   &lt 3 S               &lt 1 T               &kp G          &kp M            &kp N                 &lt 3 E                   &lt 4 I                        &kp O
+  &kp Z  &hold_tap LEFT_CONTROL X  &hold_tap LEFT_ALT C  &hold_tap LEFT_GUI D  &kp V          &kp K            &hold_tap LEFT_GUI H  &hold_tap LEFT_ALT COMMA  &hold_tap LEFT_CONTROL PERIOD  &kp FSLH
+                                                         &kp LEFT_ALT          &lt 5 SPACE    &lt 2 BACKSPACE  &smart_shft
             >;
 
             display-name = "ColemakDH";
