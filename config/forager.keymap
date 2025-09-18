@@ -10,18 +10,41 @@
 #define BASE 0
 
 / {
+    behaviors {
+        hold_tap_layer_key: hold_tap_layer_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_LAYER_KEY";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P      &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI
-  &kp A  &kp R  &kp S  &kp T      &kp G        &kp M      &kp N     &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C  &kp D      &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH
-                       &kp LCTRL  &kp SPACE    &kp LSHFT  &kp BSPC
+  &kp Q  &kp W  &kp F  &kp P                    &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI
+  &kp A  &kp R  &kp S  &hold_tap_layer_key 1 T  &kp G        &kp M      &kp N     &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp D                    &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH
+                       &kp LCTRL                &kp SPACE    &kp LSHFT  &kp BSPC
             >;
 
             display-name = "ColemakDH";
+        };
+
+        nav {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans         &trans      &trans        &trans     &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT       &kp DOWN    &kp UP_ARROW  &kp RIGHT  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans         &trans      &trans        &trans     &trans
+                          &trans  &trans    &kp BACKSPACE  &kp DELETE
+            >;
+
+            label = "Navigation";
         };
     };
 };
