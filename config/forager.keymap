@@ -9,6 +9,8 @@
 
 #define BASE 0
 
+&lt { quick-tap-ms = <50>; };
+
 / {
     behaviors {
         hold_tap_layer_key: hold_tap_layer_key {
@@ -27,10 +29,10 @@
 
         base {
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P                    &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI
-  &kp A  &kp R  &kp S  &hold_tap_layer_key 1 T  &kp G        &kp M      &kp N     &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C  &kp D                    &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH
-                       &kp LCTRL                &kp SPACE    &kp LSHFT  &kp BSPC
+  &kp Q  &kp W  &kp F  &kp P      &kp B        &kp J      &kp L     &kp U      &kp Y    &kp SEMI
+  &kp A  &kp R  &kp S  &lt 1 T    &kp G        &kp M      &kp N     &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp D      &kp V        &kp K      &kp H     &kp COMMA  &kp DOT  &kp FSLH
+                       &kp LCTRL  &kp SPACE    &kp LSHFT  &kp BSPC
             >;
 
             display-name = "ColemakDH";
