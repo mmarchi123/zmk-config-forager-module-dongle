@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'boards\shields\forager\forager.keymap'
-      - 'boards\shields\forager*.dtsi'
+      - 'config/*.keymap'
+      - 'boards/shields/forager/*.dtsi'
       - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
 
