@@ -55,7 +55,7 @@ layers:
   - ↓
   - UP ARROW
   - →
-  - {t: ▽, type: trans}
+  - '&select_line'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,11 +196,11 @@ layers:
   - Mouse ↑
   - Mouse →
   - End
-  - {t: ▽, type: trans}
+  - '&select_all_copy'
   - Select All
   - Undo
   - Ctl+Y
-  - {t: ▽, type: trans}
+  - '&select_all_paste'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

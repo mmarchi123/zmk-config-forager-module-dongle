@@ -55,6 +55,36 @@
         };
     };
 
+    macros {
+        zeroes: zeroes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_0 &kp NUMBER_0>;
+            label = "ZEROES";
+        };
+
+        select_all_copy: select_all_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(C)>;
+            label = "SELECT_ALL_COPY";
+        };
+
+        select_all_paste: select_all_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(V)>;
+            label = "SELECT_ALL_PASTE";
+        };
+
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "SELECT_LINE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,7 +102,7 @@
         nav {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)       &trans      &trans        &kp LC(RIGHT)   &kp LS(LC(LEFT))
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT           &kp DOWN    &kp UP_ARROW  &kp RIGHT       &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT           &kp DOWN    &kp UP_ARROW  &kp RIGHT       &select_line
   &trans  &trans  &trans  &trans  &trans    &kp LC(BACKSPACE)  &trans      &trans        &kp LC(DELETE)  &kp LC(LS(RIGHT))
                           &trans  &trans    &kp BACKSPACE      &kp DELETE
             >;
@@ -115,10 +145,10 @@
 
         sys {
             bindings = <
-  &mkp RCLK  &msc SCRL_UP  &trans     &msc SCRL_DOWN  &mkp LCLK    &trans          &trans          &trans        &trans           &trans
-  &kp HOME   &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp END      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END
-  &trans     &kp LC(A)     &kp LC(Z)  &kp LC(Y)       &trans       &trans          &trans          &trans        &trans           &trans
-                                      &trans          &trans       &trans          &trans
+  &mkp RCLK         &msc SCRL_UP  &trans     &msc SCRL_DOWN  &mkp LCLK            &trans          &trans          &trans        &trans           &trans
+  &kp HOME          &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp END              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END
+  &select_all_copy  &kp LC(A)     &kp LC(Z)  &kp LC(Y)       &select_all_paste    &trans          &trans          &trans        &trans           &trans
+                                             &trans          &trans               &trans          &trans
             >;
 
             label = "System";
