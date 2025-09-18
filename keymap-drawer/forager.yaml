@@ -2,9 +2,9 @@ layout: {zmk_keyboard: forager}
 layers:
   ColemakDH:
   - Q
-  - W
+  - {t: W, s: Win Prev}
   - F
-  - P
+  - {t: P, s: ↹}
   - B
   - J
   - L
@@ -31,9 +31,9 @@ layers:
   - {t: ',', h: LEFT ALT}
   - {t: ., h: LEFT CONTROL}
   - /
-  - Ctrl
-  - ␣
-  - Shift
+  - LEFT ALT
+  - {t: ␣, h: System}
+  - {t: LEFT SHIFT, h: sticky, s: Caps Word}
   - {t: BACKSPACE, h: Function}
   Navigation:
   - {t: ▽, type: trans}
@@ -41,11 +41,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+←
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+→
+  - Sft+Ctl+←
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -61,11 +61,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+DELETE
+  - Ctl+Sft+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
@@ -175,3 +175,38 @@ layers:
   - ␣
   - BACKSPACE
   - DELETE
+  System:
+  - Right Click
+  - Scroll ↑
+  - {t: ▽, type: trans}
+  - Scroll ↓
+  - Left Click
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Home
+  - Cut
+  - Copy
+  - Ctl+V
+  - End
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
+  - End
+  - {t: ▽, type: trans}
+  - Select All
+  - Undo
+  - Ctl+Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}

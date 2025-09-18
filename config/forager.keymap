@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 
@@ -13,16 +14,6 @@
 
 / {
     behaviors {
-        hold_tap_layer_key: hold_tap_layer_key {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_LAYER_KEY";
-            bindings = <&to>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
         hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
@@ -33,6 +24,35 @@
             quick-tap-ms = <50>;
             flavor = "balanced";
         };
+
+        smart_shft: smart_shft {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHFT";
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        w_shiftTab: w_shiftTab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_SHIFTTAB";
+            bindings = <&kp W>, <&kp LS(TAB)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        p_shiftTab: p_shiftTab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "P_SHIFTTAB";
+            bindings = <&kp P>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
@@ -40,10 +60,10 @@
 
         base {
             bindings = <
-  &kp Q  &kp W                     &kp F                 &kp P                 &kp B        &kp J      &kp L                 &kp U                     &kp Y                          &kp SEMI
-  &kp A  &lt 4 R                   &lt 3 S               &lt 1 T               &kp G        &kp M      &kp N                 &lt 3 E                   &lt 4 I                        &kp O
-  &kp Z  &hold_tap LEFT_CONTROL X  &hold_tap LEFT_ALT C  &hold_tap LEFT_GUI D  &kp V        &kp K      &hold_tap LEFT_GUI H  &hold_tap LEFT_ALT COMMA  &hold_tap LEFT_CONTROL PERIOD  &kp FSLH
-                                                         &kp LCTRL             &kp SPACE    &kp LSHFT  &lt 2 BACKSPACE
+  &kp Q  &w_shiftTab               &kp F                 &p_shiftTab           &kp B          &kp J        &kp L                 &kp U                     &kp Y                          &kp SEMI
+  &kp A  &lt 4 R                   &lt 3 S               &lt 1 T               &kp G          &kp M        &kp N                 &lt 3 E                   &lt 4 I                        &kp O
+  &kp Z  &hold_tap LEFT_CONTROL X  &hold_tap LEFT_ALT C  &hold_tap LEFT_GUI D  &kp V          &kp K        &hold_tap LEFT_GUI H  &hold_tap LEFT_ALT COMMA  &hold_tap LEFT_CONTROL PERIOD  &kp FSLH
+                                                         &kp LEFT_ALT          &lt 5 SPACE    &smart_shft  &lt 2 BACKSPACE
             >;
 
             display-name = "ColemakDH";
@@ -51,10 +71,10 @@
 
         nav {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans         &trans      &trans        &trans     &trans
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT       &kp DOWN    &kp UP_ARROW  &kp RIGHT  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans         &trans      &trans        &trans     &trans
-                          &trans  &trans    &kp BACKSPACE  &kp DELETE
+  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)       &trans      &trans        &kp LC(RIGHT)   &kp LS(LC(LEFT))
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT           &kp DOWN    &kp UP_ARROW  &kp RIGHT       &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LC(BACKSPACE)  &trans      &trans        &kp LC(DELETE)  &kp LC(LS(RIGHT))
+                          &trans  &trans    &kp BACKSPACE      &kp DELETE
             >;
 
             label = "Navigation";
@@ -91,6 +111,17 @@
             >;
 
             label = "Symbol";
+        };
+
+        sys {
+            bindings = <
+  &mkp RCLK  &msc SCRL_UP  &trans     &msc SCRL_DOWN  &mkp LCLK    &trans          &trans          &trans        &trans           &trans
+  &kp HOME   &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp END      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END
+  &trans     &kp LC(A)     &kp LC(Z)  &kp LC(Y)       &trans       &trans          &trans          &trans        &trans           &trans
+                                      &trans          &trans       &trans          &trans
+            >;
+
+            label = "System";
         };
     };
 };
