@@ -9,219 +9,26 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define NAV 1
-#define FUN 2
-#define NUM 3
-#define SYMBOL 4
-#define NAV2 5
-#define SYS 6
+
 
 
 / {
-    behaviors {
-        smart_shift: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&caps_word>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hold_tap_layer_kp: hold_tap_layer_kp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_LAYER_KP";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            flavor = "hold-preferred";
-        };
-
-        kp_morph_w_tab: kp_morph_w_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_MORPH_W_TAB";
-            bindings = <&kp W>, <&kp LS(TAB)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
-        kp_morph_p_tab: kp_morph_p_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_MORPH_P_TAB";
-            bindings = <&kp P>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-    };
-
-
-    macros {
-        zeroes: zeroes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0 &kp N0 &kp N0>;
-            label = "ZEROES";
-        };
-
-        arrow: arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GREATER_THAN>;
-            label = "ARROW";
-        };
-
-        select_all_copy: select_all_copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp LC(C)>;
-            label = "SELECT_ALL_COPY";
-        };
-
-        select_all_paste: select_all_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp LC(V)>;
-            label = "SELECT_ALL_PASTE";
-        };
-
-        select_line: select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END)>;
-            label = "SELECT_LINE";
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        ctrl_alt_del {
-            bindings = <&kp LA(LC(DELETE))>;
-            key-positions = <20 29>;
-        };
-
-        snip_tool {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <0 4>;
-        };
-
-        bracket_right {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <6 8>;
-        };
-
-        bracket_left {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <1 3>;
-        };
-
-        parentesis_left {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <21 23>;
-        };
-
-        parentesis_right {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <26 28>;
-        };
-
-        shortcut_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <12 13>;
-            layers = <6>;
-        };
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <14 15>;
-        };
-
-        enter_return {
-            bindings = <&kp ENTER>;
-            key-positions = <27 28>;
-        };
-    };
+    
 
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-  &kp Q  &kp_morph_w_tab         &kp F                   &kp_morph_p_tab         &kp B                         &kp J         &kp L                           &kp U                   &kp Y                   &kp SEMICOLON
-  &kp A  &hold_tap_layer_kp 4 R  &hold_tap_layer_kp 3 S  &hold_tap_layer_kp 1 T  &kp G                         &kp M         &kp N                           &hold_tap_layer_kp 3 E  &hold_tap_layer_kp 4 I  &kp O
-  &kp Z  &kp X                   &kp C                   &kp D                   &kp V                         &kp K         &kp H                           &kp COMMA               &kp DOT                 &kp FSLH
-                                                         &kp LEFT_ALT            &hold_tap_layer_kp 6 SPACE    &smart_shift  &hold_tap_layer_kp 2 BACKSPACE
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+                                                                            &trans          &trans          &trans          &trans
             >;
+           display-name = "ColemakDH";
 
-            label = "ColemakDH";
         };
 
-        nav {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans     &kp END
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW     &kp RIGHT  &kp SPACE
-  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &kp LBKT         &kp RBKT   &trans
-                          &trans  &trans    &kp BSPC        &kp DEL
-            >;
 
-            label = "Navigation";
-        };
-
-        fun {
-            bindings = <
-  &trans          &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-  &trans    &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10
-                                  &trans  &trans    &trans  &trans
-            >;
-
-            label = "Functions";
-        };
-
-        num {
-            bindings = <
-  &trans  &kp N7  &kp N8  &kp N9  &trans       &trans    &kp N7   &kp N8  &kp N9  &trans
-  &kp N0  &kp N4  &kp N5  &kp N6  &zeroes      &zeroes   &kp N4   &kp N5  &kp N6  &kp N0
-  &trans  &kp N1  &kp N2  &kp N3  &trans       &trans    &kp N1   &kp N2  &kp N3  &trans
-                          &trans  &kp SPACE    &kp BSPC  &kp DEL
-            >;
-
-            label = "Numeric";
-        };
-
-        symbol {
-            bindings = <
-  &kp GRAVE  &kp AT_SIGN    &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp PERCENT     &kp DOLLAR       &kp QUESTION   &kp FSLH          &kp BSLH  &trans
-  &kp CARET  &kp HASH       &kp PLUS        &kp EQUAL          &kp ASTERISK    &kp EXCLAMATION  &kp COLON      &kp TILDE         &kp PIPE  &trans
-  &kp MINUS  &kp AMPERSAND  &kp SQT         &kp DOUBLE_QUOTES  &kp GRAVE       &kp UNDERSCORE   &kp LESS_THAN  &kp GREATER_THAN  &arrow    &trans
-                                            &trans             &trans          &kp BACKSPACE    &kp DEL
-            >;
-
-            label = "Symbol";
-        };
-
-        nav2 {
-            bindings = <
-  &trans                  &trans  &trans  &trans  &trans    &trans             &trans        &trans  &trans         &trans
-  &kp LC(LS(LEFT_ARROW))  &trans  &trans  &trans  &trans    &kp LC(LEFT)       &trans        &trans  &kp LC(RIGHT)  &kp LC(LS(RIGHT))
-  &trans                  &trans  &trans  &trans  &trans    &trans             &select_line  &trans  &trans         &trans
-                                          &trans  &trans    &kp LC(BACKSPACE)  &kp LC(DEL)
-            >;
-
-            label = "Navigation2";
-        };
-
-        sys {
-            bindings = <
-  &mkp RCLK         &kp K_SCROLL_UP    &kp LS(F3)  &kp LC(F3)  &mkp LCLK            &trans          &kp C_VOLUME_UP   &kp C_VOL_DN       &trans     &kp K_MUTE
-  &kp LC(A)         &kp LC(X)          &kp LC(C)   &kp LC(V)   &kp END              &kp LEFT_ARROW  &kp DOWN          &kp UP_ARROW       &kp RIGHT  &kp END
-  &select_all_copy  &kp K_SCROLL_DOWN  &kp LC(Z)   &kp LC(Y)   &select_all_paste    &trans          &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &trans     &trans
-                                                   &trans      &trans               &kp BACKSPACE   &kp DELETE
-            >;
-
-            label = "System";
-        };
     };
 };
