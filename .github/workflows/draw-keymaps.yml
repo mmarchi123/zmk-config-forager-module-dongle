@@ -19,7 +19,7 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: 'boards\shields\forager\forager.keymap' # path to the keymaps to parse
+      keymap_patterns: 'boards/shields/forager/forager.keymap' # path to the keymaps to parse
       config_path: keymap-drawer/config.yaml # config file, ignored if it doesn't exist
       output_folder: keymap-drawer # path to save produced SVGs
       install_branch: dev # branch to install keymap-drawer from
