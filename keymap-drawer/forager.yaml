@@ -41,11 +41,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+←
   - Ctl+←
-  - Ctl+Sft+←
+  - Sft+UP ARROW
   - Ctl+→
-  - ''
+  - Sft+→
   - ''
   - ''
   - ''
@@ -63,7 +63,7 @@ layers:
   - ''
   - ''
   - Ctl+BACKSPACE
-  - Ctl+Sft+→
+  - Sft+↓
   - Ctl+DELETE
   - ''
   - ''
