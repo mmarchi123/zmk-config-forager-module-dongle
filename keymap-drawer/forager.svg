@@ -1438,13 +1438,13 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(560, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">E</text>
+<text x="0" y="0" class="key tap">K</text>
 <a href="#Numeric">
 <text x="0" y="24" class="key hold layer-activator">Numeric</text>
 </a></g>
 <g transform="translate(616, 100)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">I</text>
+<text x="0" y="0" class="key tap">L</text>
 <a href="#Symbol">
 <text x="0" y="24" class="key hold layer-activator">Symbol</text>
 </a></g>

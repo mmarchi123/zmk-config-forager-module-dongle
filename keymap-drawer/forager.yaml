@@ -228,8 +228,8 @@ layers:
   - G
   - H
   - J
-  - {t: E, h: Numeric}
-  - {t: I, h: Symbol}
+  - {t: K, h: Numeric}
+  - {t: L, h: Symbol}
   - ;
   - Z
   - {t: X, h: LEFT CONTROL}
