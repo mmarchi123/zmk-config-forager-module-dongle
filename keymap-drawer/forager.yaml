@@ -210,6 +210,41 @@ layers:
   - {type: held}
   - ''
   - ''
+  Qwerty:
+  - Q
+  - {t: W, s: Win Prev}
+  - E
+  - {t: R, s: ↹}
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: Symbol}
+  - {t: D, h: Numeric}
+  - {t: F, h: Navigation}
+  - G
+  - H
+  - J
+  - {t: E, h: Numeric}
+  - {t: I, h: Symbol}
+  - ;
+  - Z
+  - {t: X, h: LEFT CONTROL}
+  - {t: C, h: LEFT ALT}
+  - {t: V, h: LEFT GUI}
+  - B
+  - N
+  - {t: M, h: LEFT GUI}
+  - {t: ',', h: LEFT ALT}
+  - {t: ., h: LEFT CONTROL}
+  - /
+  - LEFT ALT
+  - {t: ␣, h: System}
+  - {t: BACKSPACE, h: Function}
+  - {t: LEFT SHIFT, h: sticky, s: Caps Word}
 combos:
 - p: [27, 28, 26]
   k: ⏎
@@ -231,3 +266,6 @@ combos:
   k: Alt+Ctl+DELETE
 - p: [14, 15]
   k: '&caps_word_space'
+- p: [31, 32]
+  k: {t: Qwerty, h: toggle}
+  l: [Qwerty, ColemakDH]

@@ -60,6 +60,16 @@
             #binding-cells = <0>;
             continue-list = <SPACE>;
         };
+
+        r_shiftTab: r_shiftTab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_SHIFTTAB";
+            bindings = <&kp R>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
     };
 
     macros {
@@ -151,6 +161,12 @@
             bindings = <&caps_word_space>;
             key-positions = <14 15>;
         };
+
+        qwerty {
+            bindings = <&tog 6>;
+            key-positions = <31 32>;
+            layers = <6 0>;
+        };
     };
 
     keymap {
@@ -220,6 +236,16 @@
             >;
 
             label = "System";
+        };
+
+        qwerty {
+            display-name = "Qwerty";
+            bindings = <
+  &kp Q  &w_shiftTab               &kp E                 &r_shiftTab           &kp T          &kp Y            &kp U                 &kp I                     &kp O                          &kp P
+  &kp A  &lt 4 S                   &lt 3 D               &lt 1 F               &kp G          &kp H            &kp J                 &lt 3 E                   &lt 4 I                        &kp SEMI
+  &kp Z  &hold_tap LEFT_CONTROL X  &hold_tap LEFT_ALT C  &hold_tap LEFT_GUI V  &kp B          &kp N            &hold_tap LEFT_GUI M  &hold_tap LEFT_ALT COMMA  &hold_tap LEFT_CONTROL PERIOD  &kp FSLH
+                                                         &kp LEFT_ALT          &lt 5 SPACE    &lt 2 BACKSPACE  &smart_shft
+            >;
         };
     };
 };
