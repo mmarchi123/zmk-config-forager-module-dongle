@@ -36,38 +36,38 @@ layers:
   - {t: BACKSPACE, h: Function}
   - {t: LEFT SHIFT, h: sticky, s: Caps Word}
   Navigation:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Ctl+←
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+←
   - Ctl+→
-  - Sft+Ctl+←
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   - ←
   - ↓
   - UP ARROW
   - →
   - '&select_line'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Ctl+BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+DELETE
   - Ctl+Sft+→
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+DELETE
+  - ''
+  - ''
+  - ''
   - BACKSPACE
   - DELETE
   Function:
@@ -120,8 +120,8 @@ layers:
   - '4'
   - {t: '5', type: held}
   - '6'
-  - ''
-  - ''
+  - '&zeroes'
+  - '&zeroes'
   - '4'
   - '5'
   - '6'
@@ -150,7 +150,7 @@ layers:
   - '?'
   - /
   - \
-  - ''
+  - '&start_comment'
   - ^
   - {t: '#', type: held}
   - +
@@ -178,14 +178,14 @@ layers:
   System:
   - Right Click
   - Scroll ↑
-  - {t: ▽, type: trans}
+  - ''
   - Scroll ↓
   - Left Click
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Home
   - Cut
   - Copy
@@ -201,15 +201,15 @@ layers:
   - Undo
   - Ctl+Y
   - '&select_all_paste'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
 combos:
 - p: [27, 28, 26]
   k: ⏎

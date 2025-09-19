@@ -83,6 +83,13 @@
             bindings = <&kp HOME &kp LS(END)>;
             label = "SELECT_LINE";
         };
+
+        start_comment: start_comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp ASTERISK &kp RET &kp ASTERISK &kp SLASH>;
+            label = "START_COMMENT";
+        };
     };
 
     combos {
@@ -150,10 +157,10 @@
 
         nav {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)       &trans      &trans        &kp LC(RIGHT)   &kp LS(LC(LEFT))
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT           &kp DOWN    &kp UP_ARROW  &kp RIGHT       &select_line
-  &trans  &trans  &trans  &trans  &trans    &kp LC(BACKSPACE)  &trans      &trans        &kp LC(DELETE)  &kp LC(LS(RIGHT))
-                          &trans  &trans    &kp BACKSPACE      &kp DELETE
+  &none  &none  &none  &none  &none    &none          &kp LC(LEFT)       &kp LC(LS(LEFT))   &kp LC(RIGHT)   &none
+  &none  &none  &none  &none  &none    &kp LEFT       &kp DOWN           &kp UP_ARROW       &kp RIGHT       &select_line
+  &none  &none  &none  &none  &none    &none          &kp LC(BACKSPACE)  &kp LC(LS(RIGHT))  &kp LC(DELETE)  &none
+                       &none  &none    &kp BACKSPACE  &kp DELETE
             >;
 
             label = "Navigation";
@@ -173,7 +180,7 @@
         num {
             bindings = <
   &none   &kp N7  &kp N8  &kp N9  &none        &none     &kp N7      &kp N8  &kp N9  &none
-  &kp N0  &kp N4  &kp N5  &kp N6  &none        &none     &kp N4      &kp N5  &kp N6  &kp N0
+  &kp N0  &kp N4  &kp N5  &kp N6  &zeroes      &zeroes   &kp N4      &kp N5  &kp N6  &kp N0
   &none   &kp N1  &kp N2  &kp N3  &none        &none     &kp N1      &kp N2  &kp N3  &none
                           &none   &kp SPACE    &kp BSPC  &kp DELETE
             >;
@@ -183,7 +190,7 @@
 
         sym {
             bindings = <
-  &kp GRAVE  &kp AT_SIGN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PERCENT    &kp DOLLAR     &kp QUESTION   &kp FSLH          &kp BSLH  &none
+  &kp GRAVE  &kp AT_SIGN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PERCENT    &kp DOLLAR     &kp QUESTION   &kp FSLH          &kp BSLH  &start_comment
   &kp CARET  &kp HASH     &kp PLUS          &kp EQUAL          &kp STAR       &kp EXCL       &kp COLON      &kp TILDE         &kp PIPE  &none
   &kp MINUS  &kp AMPS     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp UNDER      &kp UNDER      &kp LESS_THAN  &kp GREATER_THAN  &none     &none
                                             &none              &kp SPACE      &kp BACKSPACE  &kp DELETE
@@ -194,10 +201,10 @@
 
         sys {
             bindings = <
-  &mkp RCLK         &msc SCRL_UP  &trans     &msc SCRL_DOWN  &mkp LCLK            &trans          &trans          &trans        &trans           &trans
+  &mkp RCLK         &msc SCRL_UP  &none      &msc SCRL_DOWN  &mkp LCLK            &none           &none           &none         &none            &none
   &kp HOME          &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp END              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp END
-  &select_all_copy  &kp LC(A)     &kp LC(Z)  &kp LC(Y)       &select_all_paste    &trans          &trans          &trans        &trans           &trans
-                                             &trans          &trans               &trans          &trans
+  &select_all_copy  &kp LC(A)     &kp LC(Z)  &kp LC(Y)       &select_all_paste    &none           &none           &none         &none            &none
+                                             &none           &none                &none           &none
             >;
 
             label = "System";
