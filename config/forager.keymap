@@ -53,6 +53,13 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        caps_word_space: caps_word_space {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_SPACE";
+            #binding-cells = <0>;
+            continue-list = <SPACE>;
+        };
     };
 
     macros {
@@ -138,6 +145,11 @@
         ctrl_alt_del {
             bindings = <&kp LA(LC(DELETE))>;
             key-positions = <20 29>;
+        };
+
+        caps_word_space {
+            bindings = <&caps_word_space>;
+            key-positions = <14 15>;
         };
     };
 
