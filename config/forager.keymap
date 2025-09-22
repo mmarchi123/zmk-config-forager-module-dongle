@@ -70,6 +70,13 @@
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
+
+        quertycolemak: quertycolemak {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "QUERTYCOLEMAK";
+            #binding-cells = <1>;
+            toggle-mode = "flip";
+        };
     };
 
     macros {
@@ -163,7 +170,7 @@
         };
 
         qwerty {
-            bindings = <&tog 6>;
+            bindings = <&quertycolemak 6>;
             key-positions = <31 32>;
             layers = <6 0>;
         };
