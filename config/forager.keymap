@@ -163,7 +163,7 @@
         };
 
         qwerty {
-            bindings = <&tog 6>;
+            bindings = <&to 6>;
             key-positions = <31 32>;
             layers = <6 0>;
         };
