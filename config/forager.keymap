@@ -121,12 +121,12 @@
 
         return {
             bindings = <&kp RET>;
-            key-positions = <27 28 26>;
+            key-positions = <16 17 18>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <21 22 23>;
+            key-positions = <11 12 13>;
         };
 
         left_bracket {
@@ -173,6 +173,11 @@
             bindings = <&quertycolemak 1>;
             key-positions = <31 32>;
             layers = <1 0>;
+        };
+
+        lockpc {
+            bindings = <&kp LG(L)>;
+            key-positions = <10 31>;
         };
     };
 
