@@ -103,8 +103,8 @@ layers:
   - ''
   - ''
   - ''
-  - BACKSPACE
-  - DELETE
+  - Ctl+BACKSPACE
+  - Ctl+DELETE
   Function:
   - ''
   - ''

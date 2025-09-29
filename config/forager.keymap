@@ -202,10 +202,10 @@
 
         nav {
             bindings = <
-  &none  &none  &none  &none  &none    &kp LS(LEFT)   &kp LC(LEFT)       &kp LS(UP_ARROW)  &kp LC(RIGHT)   &kp LS(RIGHT)
-  &none  &none  &none  &none  &none    &kp LEFT       &kp DOWN           &kp UP_ARROW      &kp RIGHT       &select_line
-  &none  &none  &none  &none  &none    &none          &kp LC(BACKSPACE)  &kp LS(DOWN)      &kp LC(DELETE)  &none
-                       &none  &none    &kp BACKSPACE  &kp DELETE
+  &none  &none  &none  &none  &none    &kp LS(LEFT)       &kp LC(LEFT)       &kp LS(UP_ARROW)  &kp LC(RIGHT)   &kp LS(RIGHT)
+  &none  &none  &none  &none  &none    &kp LEFT           &kp DOWN           &kp UP_ARROW      &kp RIGHT       &select_line
+  &none  &none  &none  &none  &none    &none              &kp LC(BACKSPACE)  &kp LS(DOWN)      &kp LC(DELETE)  &none
+                       &none  &none    &kp LC(BACKSPACE)  &kp LC(DELETE)
             >;
 
             label = "Navigation";
