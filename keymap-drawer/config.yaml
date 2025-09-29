@@ -42,7 +42,7 @@ parse_config:
     combo_left_bracket:  {align: bottom}
     combo_snipping_tool:   {align: top, w: 36}
     combo_right_bracket: {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
+    r_shiftTab:   {draw_separate: true}
     combo_rpar:   {draw_separate: true}
     combo_esc:    {draw_separate: true}
     combo_ret:    {draw_separate: true}
