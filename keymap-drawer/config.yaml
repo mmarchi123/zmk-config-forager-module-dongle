@@ -46,7 +46,7 @@ parse_config:
     combo_rpar:   {draw_separate: true}
     combo_esc:    {draw_separate: true}
     combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
+    combo_qwerty:   {draw_separate: true}
     combo_indbat: {align: top, o: 0.25}
     combo_indcon: {align: top}
 

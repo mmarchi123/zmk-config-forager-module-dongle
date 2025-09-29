@@ -4,7 +4,6 @@ on: #[push, pull_request, workflow_dispatch]
     paths:
       - 'config/*.keymap'
       - 'boards/shields/forager/*.dtsi'
-      - .github/workflows/draw-keymaps.yml
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
