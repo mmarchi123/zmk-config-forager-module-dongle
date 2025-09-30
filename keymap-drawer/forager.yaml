@@ -265,7 +265,7 @@ combos:
 - p: [20, 29]
   k: Alt+Ctl+DELETE
 - p: [14, 15]
-  k: '&caps_word_space'
+  k: Caps Word
 - p: [31, 32]
   k: '&quertycolemak 1'
   l: [Qwerty, ColemakDH]

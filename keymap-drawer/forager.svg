@@ -364,7 +364,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="336" y="245" width="28" height="26" class="combo"/>
@@ -609,7 +611,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="336" y="245" width="28" height="26" class="combo"/>
@@ -819,7 +823,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <path d="M163,188 l-118,-61" class="combo"/>
@@ -1008,7 +1014,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <path d="M163,188 l-118,-61" class="combo"/>
@@ -1210,7 +1218,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <path d="M163,188 l-118,-61" class="combo"/>
@@ -1417,7 +1427,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <path d="M163,188 l-118,-61" class="combo"/>
@@ -1632,7 +1644,9 @@ path.combo { stroke: #7f7f7f; }
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
-<text x="350" y="100" class="combo tap"><tspan style="font-size: 64%">&amp;caps_word…</tspan></text>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Caps</tspan><tspan x="350" dy="1.2em">Word</tspan>
+</text>
 </g>
 <g class="combo combopos-10">
 <path d="M163,188 l-118,-61" class="combo"/>
