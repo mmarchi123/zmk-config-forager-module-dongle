@@ -269,5 +269,5 @@ combos:
 - p: [31, 32]
   k: '&quertycolemak 1'
   l: [Qwerty, ColemakDH]
-- p: [10, 31]
+- p: [10, 19]
   k: Lock

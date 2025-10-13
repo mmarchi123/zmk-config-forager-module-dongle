@@ -375,10 +375,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-11">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -622,10 +622,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-11">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -828,10 +828,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-10">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -1019,10 +1019,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-10">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -1223,10 +1223,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-10">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -1432,10 +1432,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-10">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>
@@ -1649,10 +1649,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-10">
-<path d="M163,188 l-118,-61" class="combo"/>
-<path d="M163,188 l118,61" class="combo"/>
-<rect rx="6" ry="6" x="149" y="175" width="28" height="26" class="combo"/>
-<text x="163" y="188" class="combo tap">Lock</text>
+<path d="M350,118 l-303,0" class="combo"/>
+<path d="M350,118 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="105" width="28" height="26" class="combo"/>
+<text x="350" y="118" class="combo tap">Lock</text>
 </g>
 </g>
 </g>

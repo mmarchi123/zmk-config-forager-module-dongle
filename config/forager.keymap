@@ -170,7 +170,7 @@
 
         lockpc {
             bindings = <&kp LG(L)>;
-            key-positions = <10 31>;
+            key-positions = <10 19>;
         };
     };
 
