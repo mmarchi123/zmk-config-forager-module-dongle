@@ -5,7 +5,7 @@ on: #[push, pull_request, workflow_dispatch]
       - 'config/*.keymap'
       - 'config/*.yml'
       - 'boards/shields/forager/*.dtsi'
-      - 'zephyr/*.yaml'
+      - 'build.yaml'
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
