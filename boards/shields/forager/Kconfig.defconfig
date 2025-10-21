@@ -11,30 +11,6 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
 
 endif
 
-if SHIELD_FORAGER_LEFT || SHIELD_FORAGER_RIGHT
-
-config ZMK_SPLIT
-    default y
-config CONFIG_PM
-    default y
-config CONFIG_PM_SLEEP
-    default y
-config CONFIG_PM_IDLE
-    default y
-config CONFIG_ZMK_BLE_ADV_INTERVAL
-    default 300
-config CONFIG_ZMK_BLE_CONN_INTERVAL_MIN
-    default 24
-config CONFIG_ZMK_BLE_CONN_INTERVAL_MAX
-    default 48
-config CONFIG_ZMK_BLE_SLAVE_LATENCY
-    default 6
-config CONFIG_ZMK_KEYMAP_SCAN_PERIOD
-    default 20000   # 20 ms
-
-endif
-
-
 if SHIELD_FORAGER_DONGLE || SHIELD_FORAGER_LEFT || SHIELD_FORAGER_RIGHT
 
 config ZMK_SPLIT
