@@ -5,7 +5,7 @@ manifest:
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: janpfischer
-      url-base: https://github.com/janpfischer
+      url-base: https://github.com/bwshockley
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-dongle-screen
-      remote: janpfischer
+      remote: bwshockley
       revision: main
   self:
     path: config
