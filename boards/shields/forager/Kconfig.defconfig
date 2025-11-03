@@ -11,9 +11,19 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
 
 endif
 
+
+if SHIELD_FORAGER_LEFT || SHIELD_FORAGER_RIGHT
+
+config ZMK_IDLE_TIMEOUT	
+    default 30000
+config ZMK_SLEEP
+    default y
+config ZMK_IDLE_SLEEP_TIMEOUT 
+    default 900000
+endif
+
 if SHIELD_FORAGER_DONGLE || SHIELD_FORAGER_LEFT || SHIELD_FORAGER_RIGHT
 
 config ZMK_SPLIT
     default y
-
 endif
