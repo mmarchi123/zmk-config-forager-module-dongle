@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: janpfischer
+    - name: bwshockley
       url-base: https://github.com/bwshockley
   projects:
     - name: zmk
