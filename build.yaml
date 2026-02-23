@@ -18,15 +18,15 @@
 # 
 ---
 include:
-  - board: seeeduino_xiao_ble/nrf52840
+  - board: seeeduino_xiao_ble
     shield: forager_dongle dongle_screen
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     snippet: studio-rpc-usb-uart zmk-usb-logging
-  - board: seeeduino_xiao_ble/nrf52840
+  - board: seeeduino_xiao_ble
     shield: forager_left rgbled_adapter
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: seeeduino_xiao_ble/nrf52840
+  - board: seeeduino_xiao_ble
     shield: forager_right rgbled_adapter
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: seeeduino_xiao_ble/nrf52840
+  - board: seeeduino_xiao_ble
     shield: settings_reset
